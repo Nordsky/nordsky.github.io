@@ -1,3 +1,2 @@
-# nordsky.github.io
-test
-[link](https://nordsky.github.io/)
+# Сайт-портфолио
+[nordsky.github.io](https://nordsky.github.io/)
