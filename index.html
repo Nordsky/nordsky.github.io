@@ -8,6 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
   </head>
+  <style>
+    .parallax_1 {
+    /* The image used */
+    background-image: url("image/parallax_1.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_2 {
+    /* The image used */
+    background-image: url("image/parallax_2.jpeg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  </style>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,7 +68,6 @@
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -61,15 +88,6 @@
               <a>Инди история по славянскому фольклору</a>
             </div>
           </div>
-          <div class="carousel-item">
-            <a href="">
-              <img src="image/test_1.png" class="d-block w-100" alt="...">
-            </a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Bozon</h5>
-              <a>Выживание в постапокалипсисе</a>
-            </div>
-          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,5 +101,11 @@
       <div class="text-center mt-4">
         <p>Страница в разработке</p>
       </div>
+      <div class="parallax_1"></div>
+      <h2>Тестирование параллакс эффекта</h2>
+      <div class="parallax_2"></div>
+      <p>Вроде работает более менее</p>
+      <p>Вроде работает более менее</p>
+      <p>Вроде работает более менее</p>
   </body>
 </html>
