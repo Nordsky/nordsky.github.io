@@ -1,23 +1,27 @@
-body, html {
+html {
     height: 100%;
   }
-  .parallax_1 {
-    background-image: url("/image/older/parallax_1.jpg");
+.back {
+  /* background-color: rgb(214, 214, 214) */
+  background: linear-gradient(30deg, #c3a0db, #bbe2dd);
+}
+.parallax_1 {
+  background-image: url("/image/older/parallax_1.jpg");
 
-    min-height: 50%; 
+  min-height: 50%; 
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .parallax_2 {
-    background-image: url("/image/older/parallax_2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_2 {
+  background-image: url("/image/older/parallax_2.jpeg");
 
-    min-height: 50%; 
+  min-height: 50%; 
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
