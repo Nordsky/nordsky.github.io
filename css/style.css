@@ -2,9 +2,9 @@ html {
     height: 100%;
   }
 .back {
-  /* background-color: rgb(214, 214, 214) */
-  height: 100%;
-  background: linear-gradient(30deg, #c3a0db, #bbe2dd);
+  background-color: rgb(214, 214, 214);
+  /* height: 100%; */
+  /* background: linear-gradient(30deg, #c3a0db, #bbe2dd); */
 }
 .parallax_1 {
   background-image: url("/image/older/parallax_1.jpg");
