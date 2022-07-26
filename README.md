@@ -1,2 +1,2 @@
 # Сайт-портфолио
-[nordsky.github.io](https://nordsky.github.io/)
+[ilyabasisty.github.io](https://ilyabasisty.github.io/)
