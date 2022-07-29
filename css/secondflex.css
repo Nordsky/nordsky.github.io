@@ -5,28 +5,33 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    margin: 0;
+    margin: 0;background-color: antiquewhite;
   }
   #main {
     display: flex;
     flex: 1;
+    flex-direction: column;
   }
   #main > article {
-    width: 75%; 
+    flex-flow: center;
+    width: 75%;
     font-size: 22px;
     flex: 1;
+    background: rgb(180, 167, 167);
+    margin: 5px;
   }
   #main > nav, 
   #main > aside {
     flex: 0 0 20vw;
-    background: beige;
+    background: rgb(221, 221, 221);
+
   }
   #main > nav {
     order: -1;
   }
   header, footer {
-    background: yellowgreen;
-    height: 20vh;
+    background: rgb(201, 209, 185);
+    height: 5vh;
   }
   header, footer, article, nav, aside {
     padding: 1em;
@@ -34,5 +39,8 @@
   @media screen and (max-width: 575px) {
     #main {
       flex-direction: column;
+    }
+    header, footer {
+      height: 20vh;
     }
   }
