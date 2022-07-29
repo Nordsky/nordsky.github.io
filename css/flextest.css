@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    width: 75%;
+    height: 450px;
+    margin: auto;
+    background-color: #333;    
+  }
+
+.blok {
+    order: 1; 
+    flex: 1 1 30%;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+article {
+    order: 2; 
+    flex: 1 1 auto;
+    background-color: #bbb;
+    border: 5px solid #333;
+    padding: 7px;
+}
+
+p {
+    color: #fff;
+    padding: 15px;
+    font-size: 22px;
+}
