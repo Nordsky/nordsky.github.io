@@ -86,6 +86,14 @@ span {
   margin: 0 auto;
 }
 
+.toplinks {
+  font-size: large;
+}
+
+.toplinks a {
+  padding-right: 10px;
+}
+
 .background {
   padding-top: 10px;
   padding-bottom: 10px;
