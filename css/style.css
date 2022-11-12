@@ -13,7 +13,7 @@
 
 body {
   font-family: Arial,sans-serif;
-  font-size: 120%;
+  font-size: 130%;
   line-height: 1.52;
   letter-spacing: 1px;
   overflow-wrap: break-word;
@@ -78,12 +78,14 @@ h2 {
   padding-right: 15px;
   margin-bottom: 0;
   color: var(--text-grey);
+  text-align: center;
 }
 
 h1 {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 span {
@@ -100,11 +102,24 @@ span {
   list-style-type: none;
 }
 
-.epigraph {
+.home-main ul {
+  margin-left: 0;
   padding-left: 0;
-  width: 100%;
+}
+
+.home-main li {
+  list-style-type: none;
+}
+
+.home-main span {
+  color: var(--text-grey);
+}
+
+.epigraph {
+  padding-left: 5%;
+  width: 90%;
   font-style: italic;
-  text-align: right;
+  text-align: center;
 }
 
 
@@ -117,9 +132,6 @@ span {
   color: var(--text-grey);
 }
 
-.blog-time {
-  float: right;
-}
 
 .blog-link {
   font-weight: bold;
@@ -127,7 +139,6 @@ span {
 }
 
 .blog-description {
-  width: 100%;
   padding: 0;
   margin-top: 0;
 }
@@ -156,6 +167,7 @@ span {
 }
 
 .container-flex {
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -165,6 +177,24 @@ span {
 .home-aside, .home-main {
   width: 100%;
 }
+
+.home-main {
+  text-align: center;
+}
+
+.image-div {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.avatar {
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
 
 @media only screen and (min-width: 800px) {
 
@@ -177,6 +207,10 @@ span {
       margin: 0 20%;
   }
 
+  h1, h2 {
+    text-align: left;
+  }
+
   .main {
     padding-top: 0px;
   }
@@ -187,21 +221,31 @@ span {
   }
 
   .home-aside {
-    width: 200px;
+    width: 300px;
   }
   
   .home-main {
+    margin-top: 20px;
     width: 200px;
     flex-grow: 1;
+    text-align: left;
+
   }
 
   .epigraph {
+    text-align: right;
     padding-left: 20%;
     width: 80%;
   }
 
   .blog-description {
     width: 80%;
+  }
+
+  .image-div {
+    align-items: right; 
+    justify-content: right;
+    margin-right: 20px;
   }
 
 }
