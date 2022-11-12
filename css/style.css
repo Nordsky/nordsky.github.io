@@ -132,6 +132,9 @@ span {
   color: var(--text-grey);
 }
 
+.blog-time {
+  float: right;
+}
 
 .blog-link {
   font-weight: bold;
@@ -162,7 +165,7 @@ span {
   padding-bottom: 10px;
   width: 100%;
   border-radius: 0px;
-  box-shadow: 5px 5px 10px var(--card-shadow);
+  box-shadow: 5px 5px 20px var(--card-shadow);
   background-color: var(--card-color);
 }
 
@@ -172,6 +175,7 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
 }
 
 .home-aside, .home-main {
@@ -179,6 +183,10 @@ span {
 }
 
 .home-main {
+  text-align: center;
+}
+
+.home-description {
   text-align: center;
 }
 
@@ -193,6 +201,11 @@ span {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+
+.link-logo {
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -221,7 +234,7 @@ span {
   }
 
   .home-aside {
-    width: 300px;
+    width: 270px;
   }
   
   .home-main {
@@ -241,6 +254,13 @@ span {
   .blog-description {
     width: 80%;
   }
+
+  .home-description {
+    padding-top: 20px;
+    padding-left: 10%;
+    text-align: left;
+  }
+  
 
   .image-div {
     align-items: right; 
