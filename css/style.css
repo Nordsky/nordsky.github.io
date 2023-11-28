@@ -208,6 +208,28 @@ span {
   height: 50px;
 }
 
+.bevy_wasm {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+  .bevy_wasm {
+    padding-left: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .bevy_wasm {
+    padding-left: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .bevy_wasm {
+    padding-left: 15vw;
+  }
+}
+
 
 @media only screen and (min-width: 800px) {
 
