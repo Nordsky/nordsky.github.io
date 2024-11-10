@@ -1,0 +1,21 @@
+.buttonsCard {
+
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+a {
+    width: 30vw;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid 0.5px var(--font-base-color);
+    box-shadow: 7px 0px 15px var(--shadow-1);
+    color: var(--font-second-color);
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+}

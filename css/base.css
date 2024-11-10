@@ -1,16 +1,71 @@
+:root {
+    --body-base-color: #051622;
+    --header-base-color: rgb(70, 92, 18);
+    --main-base-color: rgb(59, 68, 70);
+    --footer-base-color: rgb(99, 23, 102);
+    --font-base-color: #1ac9bd;
+    --font-second-color: #deb992;
+    --shadow-1: #020f0e;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url(/font/Monocraft.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #442d25;
-}
-
-.centerInfo {
-    padding-top: 40vh;
+    background-color: var(--body-base-color);
+    font-family: 'Monocraft';
     text-align: center;
-
+    color: var(--font-base-color);
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
-.centerInfo > span {
-    font-size: 40px;
-    font-weight: bold;
+h1 {
+    font-size: 3rem;
 }
+
+
+
+header {
+    color: var(--font-second-color);
+    grid-column: 1/13;
+}
+
+main {
+    grid-column: 1/13;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+footer {
+    grid-column: 1/13;
+    height: 50px;
+}
+
+header,
+aside,
+main,
+footer {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.5px var(--font-base-color);
+}
+
