@@ -13,6 +13,23 @@
     src: url(/font/Monocraft.otf);
 }
 
+@font-face {
+    font-family: 'LorenzoRegular';
+    src: url(/font/Lorenzo\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BlackerSans';
+    src: url(/font/0_BlackerSansProVariableGX.ttf);
+}
+
+
+@font-face {
+    font-family: 'BlackerSansIt';
+    src: url(/font/1_BlackerSansProItVariableGX.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +40,9 @@
 
 body {
     background-color: var(--body-base-color);
-    font-family: 'Monocraft';
+    font-family: 'BlackerSans';
     text-align: center;
+    justify-content: center;
     color: var(--font-base-color);
     display: grid;
     gap: 0.5rem;
@@ -35,19 +53,23 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
+div {
+    /* background-color: var(--header-base-color); */
+}
 
 
 header {
     color: var(--font-second-color);
     grid-column: 1/13;
+    font-weight: 80;
+    font-size: 60px;
 }
 
 main {
     grid-column: 1/13;
-
     display: grid;
     justify-items: center;
     align-items: center;
@@ -55,9 +77,12 @@ main {
     padding: 1rem;
 }
 
+
 footer {
     grid-column: 1/13;
-    height: 50px;
+    height: 70px;
+    font-weight: 70;
+    box-shadow: 9px 5px 11px var(--shadow-1);
 }
 
 header,
@@ -66,6 +91,34 @@ main,
 footer {
   padding: 1rem;
   border-radius: 0.5rem;
-  border: solid 0.5px var(--font-base-color);
+  /* border: solid 0.5px var(--font-base-color); */
 }
 
+
+
+.IconsList {
+    position: absolute;
+    bottom: 1fr;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr)
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+    font-size: 50px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-second-color);
+    background-color: #020f0e;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    color: var(--font-base-color);
+  }
+    

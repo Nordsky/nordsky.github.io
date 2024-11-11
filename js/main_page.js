@@ -1,0 +1,5 @@
+
+
+function exitFromSite() {
+    window.close();
+}

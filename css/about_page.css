@@ -1,0 +1,8 @@
+header,
+aside,
+main,
+footer {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /* border: solid 0.5px var(--font-base-color); */
+}
