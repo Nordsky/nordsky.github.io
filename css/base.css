@@ -1,16 +1,124 @@
+:root {
+    --body-base-color: #051622;
+    --header-base-color: rgb(70, 92, 18);
+    --main-base-color: rgb(59, 68, 70);
+    --footer-base-color: rgb(99, 23, 102);
+    --font-base-color: #1ac9bd;
+    --font-second-color: #deb992;
+    --shadow-1: #020f0e;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url(/font/Monocraft.otf);
+}
+
+@font-face {
+    font-family: 'LorenzoRegular';
+    src: url(/font/Lorenzo\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BlackerSans';
+    src: url(/font/0_BlackerSansProVariableGX.ttf);
+}
+
+
+@font-face {
+    font-family: 'BlackerSansIt';
+    src: url(/font/1_BlackerSansProItVariableGX.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #442d25;
-}
-
-.centerInfo {
-    padding-top: 40vh;
+    background-color: var(--body-base-color);
+    font-family: 'BlackerSans';
     text-align: center;
-
+    justify-content: center;
+    color: var(--font-base-color);
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
-.centerInfo > span {
-    font-size: 40px;
-    font-weight: bold;
+h1 {
+    font-size: 4rem;
 }
+
+div {
+    /* background-color: var(--header-base-color); */
+}
+
+
+header {
+    color: var(--font-second-color);
+    grid-column: 1/13;
+    font-weight: 80;
+    font-size: 60px;
+}
+
+main {
+    grid-column: 1/13;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+
+footer {
+    grid-column: 1/13;
+    height: 70px;
+    font-weight: 70;
+    box-shadow: 9px 5px 11px var(--shadow-1);
+}
+
+header,
+aside,
+main,
+footer {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /* border: solid 0.5px var(--font-base-color); */
+}
+
+
+
+.IconsList {
+    position: absolute;
+    bottom: 1fr;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr)
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+    font-size: 50px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-second-color);
+    background-color: #020f0e;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    color: var(--font-base-color);
+  }
+    

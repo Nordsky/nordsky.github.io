@@ -1,0 +1,53 @@
+.buttonsCard {
+
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.introductionText {
+    font-weight: 50;
+    font-size: 34px;
+    text-align: center;
+    max-width: 900px;
+}
+
+.button {
+    font-family: 'Monocraft';
+    width: 400px;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--body-base-color);
+    /* border: 5px solid transparent; */
+    box-shadow: 5px 3px 16px var(--shadow-1);
+    color: var(--font-second-color);
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+}
+
+.button:hover {
+    /* background-color: var(--font-second-color); */
+    /* color: var(--font-base-color); */
+    /* outline: 3px solid var(--font-base-color); */
+    box-shadow: 0 0 17px var(--font-base-color);
+}
+
+
+@media (width <= 900px) {
+    .introductionText {
+        text-align: justify;
+    }
+
+  }
+
+
+@media (width <= 500px) {
+    .button {
+        width: 100%;
+    }
+  }
